@@ -1,8 +1,9 @@
 const hre = require("hardhat");
+const { contractAddr } = require('../contract.json');
 
 async function testInvokeSpeed() {
     // We get the deployed contract
-    const contract = await hre.ethers.getContractAt("Storage", "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");
+    const contract = await hre.ethers.getContractAt("Storage", contractAddr);
     
     var txlist = [];
 
