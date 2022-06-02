@@ -30,7 +30,7 @@ vi secrets.json
 # 3、部署测试合约
 运行以下指令
 ```
-npx hardhat run ./scripts/sample-script.js
+npx hardhat run ./scripts/sample-script.js --network localhost
 ```
 输出类似以下信息：
 ```
@@ -50,5 +50,5 @@ vi contract.json
 
 # 5、大量发交易
 ```
-npx hardhat run ./scripts/maas-script.js
+npx hardhat run ./scripts/maas-script.js --network localhost
 ```
