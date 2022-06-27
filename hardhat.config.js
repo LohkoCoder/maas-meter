@@ -21,7 +21,7 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     localhost: {
-      url: 'http://localhost:8545',
+      url: 'http://121.4.146.202:8545',
       chainId: 10898, // 0x507 in hex,
       accounts: [privateKey]
     }

@@ -14,12 +14,13 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Storage = await hre.ethers.getContractFactory("Storage");
-  const storage = await Storage.deploy();
+  const MyCollectible = await hre.ethers.getContractFactory("MyCollectible");
+    const owner = await hre.ethers.getSigner();
+    const myCollectible = await MyCollectible.connect(owner).deploy();
 
-  await storage.deployed();
+  await myCollectible.deployed();
 
-  console.log("Storage deployed to:", storage.address);
+  console.log("MyCollectible deployed to:", myCollectible.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

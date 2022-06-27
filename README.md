@@ -30,7 +30,7 @@ vi secrets.json
 # 3、部署测试合约
 运行以下指令
 ```
-npx hardhat run ./scripts/sample-script.js --network localhost
+npx hardhat run ./scripts/deployErc721.js --network localhost
 ```
 输出类似以下信息：
 ```
